@@ -45,7 +45,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:mshiva1035/siva-petclinic.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
