@@ -4,19 +4,20 @@ import com.springframework.sivapetclinic.model.Owner;
 import com.springframework.sivapetclinic.model.Vet;
 import com.springframework.sivapetclinic.services.OwnerService;
 import com.springframework.sivapetclinic.services.VetService;
-import com.springframework.sivapetclinic.services.map.OwnerServiceMap;
-import com.springframework.sivapetclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DataLoader implements CommandLineRunner {
 
-
-    private final OwnerService ownerService;
-    private final VetService vetService;
+    @Autowired
+    private OwnerService ownerService;
+    @Autowired
+    private VetService vetService;
 
     public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+
     }
 
     @Override
