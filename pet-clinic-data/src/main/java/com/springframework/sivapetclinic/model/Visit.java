@@ -2,6 +2,7 @@ package com.springframework.sivapetclinic.model;
 
 import java.time.LocalDate;
 
+
 public class Visit extends  BaseEntity {
 
     private LocalDate date;
